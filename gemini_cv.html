@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume PDF Generator</title>
+    <!-- Include html2pdf library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- 
+<div class="btn-container">
+    <button class="download-btn" onclick="generatePDF()">Download PDF</button>
+</div> -->
+
+<div class="page container" id="resume">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="profile-img-container">
+            <img src="Image.jpeg" alt="Profile Picture" class="profile-img">
+        </div>
+
+        <div class="l-sect">
+            <h2><i class="fa-solid fa-circle-user"></i> Contact</h2>
+            <ul>
+                <li><strong><i class="fa-brands fa-whatsapp"></i> WhatsApp:</strong> +92 328 6251808</li>
+                <li><strong><i class="fa-regular fa-envelope"></i> Primary-Email:</strong> zohaibhassanjutt58@gmail.com</li>
+                <li><strong><i class="fa-regular fa-envelope"></i> Secondary-Email:</strong> hassanjuttchzohaib@gmail.com</li>
+                <li><strong><i class="fa-brands fa-github"></i> GitHub:</strong> github.com/Zohaib-Hassan-Jutt</li>
+                <li><strong><i class="fa-solid fa-location-dot"></i> Location:</strong> Sahiwal Sargodha, Pakistan</li>
+            </ul>
+        </div>
+
+        <div class="l-sect education">
+            <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+            <ul>
+                <li> <span>BS Software Engineering - Student</span> 
+                    <div>In University of Sargodha </div> </li>
+                <li><h3> Intermediate &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3> <div> 2023 - 2025 </div></li>
+                <li><h3> Matriculation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3> <div> 2021 - 2023 </div></li>
+            </ul>
+        </div>
+
+        <div class="l-sect">
+            <h2><i class="fa-solid fa-code"></i> Skills</h2>
+            <ul>
+                <li><i class="fa-solid fa-code"></i> HTML / CSS / JavaScript</li>
+                <li><i class="fa-solid fa-mobile-screen-button"></i> Responsive Web Design</li>
+                <li><i class="fa-brands fa-css3-alt"></i> Front-End Frameworks</li>
+                <li><i class="fa-brands fa-git-alt"></i> Git & <i class="fa-brands fa-github"></i>GitHub</li>
+                <li><i class="fa-solid fa-database"></i> My SQL</li>
+            </ul>
+        </div>
+
+        <div class="l-sect s-skill">
+            <h2><i class="fa-solid fa-user-group"></i> Soft Skills</h2>
+
+                <div><i class="fa-regular fa-circle-check"></i> Good Communication <i class="fa-solid fa-comments"></i></div>
+                <div><i class="fa-regular fa-circle-check"></i> Teamwork <i class="fa-solid fa-users"></i></div>
+                <div><i class="fa-regular fa-circle-check"></i> Strong Work Ethic <i class="fa-solid fa-handshake"></i></div>
+                <div><i class="fa-regular fa-circle-check"></i> Reliablity <i class="fa-solid fa-handshake"></i></div>
+                <div><i class="fa-regular fa-circle-check"></i> Resposive & Friendly <i class="fa-solid fa-envelope-circle-check"></i></div>
+                <div><i class="fa-regular fa-circle-check"></i> Adaptable & Quick Learner <i class="fa-solid fa-file-pen"></i></div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <header class="header">
+            <div class="main-Name">
+                <h1>M Zohaib Hassan</h1>
+            </div>
+            <h1>Front-End Web Developer</h1>
+            <h3>BS Software Engineering Student</h3>
+        </header>
+
+        <section class="profile">
+            <h2 class="section-title">Profile</h2>
+            <p style="font-size: 11.5px;">Passionate Front-End Web Developer Skilled in HTML, CSS, & JavaScript. I have an experience in creating responsive, user-friendly web interfaces and interactive Web Applications. Also i am a  student of BS Software Engineering.</p>
+        </section>
+
+        <section class="main-skill">
+           <div class="s-text">
+                <img src="image-code.svg" alt="code">
+                <h4>Clean Code</h4>
+                <div>writing clean,structured and maintainable Code.</div>
+            </div>
+           <div class="v-sep"></div>
+           <div class="s-text">
+                <img src="computer-phone-sync-stroke-rounded.svg" alt="mobile">
+                <h4>Responsive Design</h4>
+                <div>Focus on Webpages to make it look perfect on all devices and all screen sizes.</div>
+           </div>
+           <div class="v-sep"></div>
+           <div class="s-text">
+                <img src="rocket-01-stroke-rounded.svg" alt="fast-rocket">
+                <h4>Fast Learner</h4>
+                <div>Quick to adopt, curious for learning, and always learning new things.</div>
+            </div>
+           <div class="v-sep"></div>
+           <div class="s-text">
+                <img src="target-02-stroke-rounded.svg" alt="to the .">
+                <h4>Goal Focused</h4>
+                <div>Focused on delivering quality results.</div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="project-section">
+                <h2 class="section-title project-title"><i class="fa-solid fa-briefcase"></i> My Projects</h2>
+                <div class="item">
+                    <div class="item-header">
+                        <h4>Fire Foods Hub Landing Page</h4>
+                    </div>
+                    <ul class="desc">
+                        <li>Designed and developed a fully responsive restaurant landing page with custom branding and UI components.</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="item-header">
+                        <h4>Amazon Clone</h4>
+                    </div>
+                    <ul class="desc">
+                        <li>Built responsive clone focusing on UI & layout using CSS Grid & Flexbox.</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="item-header">
+                        <h4>Cards and multipe UI Components</h4>
+                    </div>
+                    <ul class="desc">
+                        <li>Created many cards and UI components as a part of assignments & projects.</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="item-header">
+                        <h4>Ultra Edits - downloading page</h4>
+                    </div>
+                    <ul class="desc">
+                        <li>Built responsive clone focusing on UI & layout, also added interactivity using Javascript.</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="item-header">
+                        <h4>VS Code - Download Page Clone</h4>
+                    </div>
+                    <ul class="desc">
+                        <li>Recreated modern software distribution layout Using Javascript DOM concepts.</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="item-header">
+                        <h4>Login and Sign up forms</h4>
+                    </div>
+                    <ul class="desc">
+                        <li>Built multiple interactive Login and Sign up forms using HTML, CSS & Javascript</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="item-header">
+                        <h4>Factorial Calculator</h4>
+                    </div>
+                    <ul class="desc">
+                        <li>Built a working Factorial Calculator of any number using Javascript</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="item-header">
+                        <h4>Calculator(with 10% wrong calculation)</h4>
+                    </div>
+                    <ul class="desc">
+                        <li>Built a Basic Math Calculator with 10% wrong calculation rate as a project/task using Javascript</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="item-header">
+                        <h4>Many more Projects</h4>
+                    </div>
+                    <ul class="desc">
+                        <li>Built Many more projects, websites, webpages, cards, designs & many more available on my github</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="github">
+                <div class="github-logo"><i class="fa-brands fa-github"></i></div>
+                <div class="github-text">
+                    <div class="text-1">Most of these are available on my github profile as repositories</div>
+                    <div class="text-2"><strong>Must <a href="https://github.com/Zohaib-Hassan-Jutt" >visit My Github profile</a> and my repositories</strong></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="f-img">
+                <img height="30" src="rocket-01-stroke-rounded.svg" alt="fast-rocket">
+            </div>
+            <div class="v-sep v-sep1"></div>
+            <div class="f-text">
+                <h4>LETS BUILD SOMETHING AMAZING TOGETHER!</h4>
+                <div>Available for freelance work and exiting opportunities</div>
+            </div>
+        </section>
+        <footer style="margin: 12px 0 0 275px;">Copyright &copy; The Lone Wolf Developer</footer>
+    </main>
+</div>
+
+<script>
+    function generatePDF() {
+        const element = document.getElementById('resume');
+        const doc = new window.jsPDF('p', 'mm', 'a4');
+
+        doc.html(element, {
+            callback: function (doc) {
+                doc.save('Resume.pdf');
+            },
+            x: 10,
+            y: 10,
+            html2canvas: { scale: 2 },
+            width: 190, // Adjust width to fit A4 size
+            windowWidth: 650 // Adjust window width for better rendering
+        });
+    }
+
+// function generatePDF() {
+//     const element = document.getElementById('resume');
+//     const opt = {
+//         margin:       0,
+//         filename:     'Resume.pdf',
+//         image:        { type: 'jpeg', quality: 0.98 },
+//         html2canvas:  { scale: 2, useCORS: true },
+//         jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+//     };
+
+//     html2pdf().from(element).set(opt).topdf().get('pdf').then(function(pdf) {
+        
+//     }).save();
+// }
+</script>
+
+</body>
+</html>
