@@ -4,17 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume PDF Generator</title>
-    <!-- Include html2pdf library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- 
-<div class="btn-container">
-    <button class="download-btn" onclick="generatePDF()">Download PDF</button>
-</div> -->
 
 <div class="page container" id="resume">
     <!-- Sidebar -->
@@ -206,39 +200,5 @@
         <footer style="margin: 12px 0 0 275px;">Copyright &copy; The Lone Wolf Developer</footer>
     </main>
 </div>
-
-<script>
-    function generatePDF() {
-        const element = document.getElementById('resume');
-        const doc = new window.jsPDF('p', 'mm', 'a4');
-
-        doc.html(element, {
-            callback: function (doc) {
-                doc.save('Resume.pdf');
-            },
-            x: 10,
-            y: 10,
-            html2canvas: { scale: 2 },
-            width: 190, // Adjust width to fit A4 size
-            windowWidth: 650 // Adjust window width for better rendering
-        });
-    }
-
-// function generatePDF() {
-//     const element = document.getElementById('resume');
-//     const opt = {
-//         margin:       0,
-//         filename:     'Resume.pdf',
-//         image:        { type: 'jpeg', quality: 0.98 },
-//         html2canvas:  { scale: 2, useCORS: true },
-//         jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
-//     };
-
-//     html2pdf().from(element).set(opt).topdf().get('pdf').then(function(pdf) {
-        
-//     }).save();
-// }
-</script>
-
 </body>
 </html>
